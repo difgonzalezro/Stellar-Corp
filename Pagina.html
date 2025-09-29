@@ -1,1 +1,91 @@
-holaa
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impresión 3D - Imprimea3D</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9fafb; color: #333; }
+    header { background: #4f46e5; color: white; padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    nav { margin-top: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #111827; }
+    .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .producto { background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden; }
+    .producto img { width: 100%; height: 180px; object-fit: cover; }
+    .producto .info { padding: 15px; }
+    .producto h3 { margin: 0; font-size: 1.2rem; color: #111827; }
+    .producto p { margin: 10px 0; color: #6b7280; font-size: 0.9rem; }
+    .producto strong { color: #4f46e5; font-size: 1.1rem; }
+    .contacto { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { padding: 12px; border: none; background: #4f46e5; color: white; border-radius: 5px; cursor: pointer; font-size: 1rem; }
+    footer { text-align: center; padding: 20px; background: #f3f4f6; margin-top: 40px; color: #6b7280; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Imprimea3D</h1>
+    <p>Impresión 3D profesional en Madrid</p>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="productos">
+    <h2>Nuestros productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1581090700227-4c4f50c3b1d4?q=80&w=600" alt="Prototipo PLA">
+        <div class="info">
+          <h3>Prototipo PLA</h3>
+          <p>Pieza impresa en PLA, ideal para maquetas y prototipos visuales.</p>
+          <strong>€15</strong>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=600" alt="Pieza funcional Nylon">
+        <div class="info">
+          <h3>Pieza funcional Nylon</h3>
+          <p>Resistencia mecánica para componentes de uso real.</p>
+          <strong>€45</strong>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1603732551658-5fabbf3a8b5f?q=80&w=600" alt="Modelo de resina SLA">
+        <div class="info">
+          <h3>Modelo de resina SLA</h3>
+          <p>Alta resolución para detalles finos y prototipos estéticos.</p>
+          <strong>€30</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto">
+      <form>
+        <input type="text" placeholder="Nombre / Empresa" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="text" placeholder="Teléfono (opcional)">
+        <textarea rows="5" placeholder="Describe tu proyecto"></textarea>
+        <button type="submit">Enviar solicitud</button>
+      </form>
+      <p style="margin-top:15px; font-size:0.9rem; color:#555;">📍 Madrid, España | ☎ +34 600 000 000 | ✉ info@imprimea3d.com</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Imprimea3D • Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
